@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="git://github.com" />
+  <remote name="private" fetch="ssh://git@github.com" />
+
+  <remove-project name="platform/frameworks/base"/>
+  <remove-project name="platform/external/sepolicy"/>
+  <remove-project name="platform/packages/apps/Settings"/>
+  <project path="frameworks/base" name="DefDroid/android_frameworks_base" remote="private" revision="defdroid-5.1.1_r3"/>
+  <project path="external/sepolicy" name="DefDroid/android_external_sepolicy" remote="private" revision="defdroid-5.1.1_r3"/>
+  <project path="packages/apps/Settings" name="DefDroid/android_packages_apps_Settings" remote="private" revision="defdroid-5.1.1_r3"/>
+</manifest>
